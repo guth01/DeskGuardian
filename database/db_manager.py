@@ -46,13 +46,21 @@ class DBManager:
     # USER OPERATIONS
     # ======================================
 
-    def create_user(self, name, age, occupation="", preferences_json="{}"):
+    def create_user(self, name, password_hash, age, occupation="", preferences_json="{}"):
         self.cursor.execute("""
-            INSERT INTO User (name, age, occupation, preferences_json)
-            VALUES (?, ?, ?, ?)
-        """, (name, age, occupation, preferences_json))
+            INSERT INTO User (name, password_hash, age, occupation, preferences_json)
+            VALUES (?, ?, ?, ?, ?)
+        """, (name, password_hash, age, occupation, preferences_json))
         self.conn.commit()
         return self.cursor.lastrowid
+
+    def get_user_by_name(self, name):
+        """Return the full user row for the given username, or None."""
+        self.cursor.execute(
+            "SELECT user_id, name, password_hash, age, occupation FROM User WHERE name = ?",
+            (name,),
+        )
+        return self.cursor.fetchone()
 
     # ======================================
     # SESSION OPERATIONS
@@ -74,6 +82,16 @@ class DBManager:
             SET end_time = ?
             WHERE session_id = ?
         """, (self._to_sql(end_time), session_id))
+        self.conn.commit()
+
+    def update_session_metrics(self, session_id, total_screen_time_minutes, bad_posture_count):
+        """Persist accumulated screen time and posture counts to the Session row."""
+        self.cursor.execute("""
+            UPDATE Session
+            SET total_screen_time_minutes = ?,
+                bad_posture_count = ?
+            WHERE session_id = ?
+        """, (total_screen_time_minutes, bad_posture_count, session_id))
         self.conn.commit()
 
     # ======================================

@@ -4121,3 +4121,291 @@
 2026-03-07 15:40:41,937 | WARNING | No notification library available.
 2026-03-07 15:40:41,944 | INFO | User requested shutdown.
 2026-03-07 15:40:42,497 | INFO | System Shutdown Complete.
+2026-03-07 15:58:29,072 | INFO | Starting DeskGuardian Application...
+2026-03-07 15:58:29,089 | INFO | Using existing user: DefaultUser (ID: 1)
+2026-03-07 16:00:00,034 | INFO | Trained model with coefficients: [[ 1.11805844  0.96585938 -0.92501028]]
+2026-03-07 16:00:00,036 | INFO | Trained and saved new burnout model.
+2026-03-07 16:00:00,038 | INFO | System Initializing...
+2026-03-07 16:00:00,055 | INFO | Monitoring Started.
+2026-03-07 16:00:57,633 | WARNING | Bad posture alert triggered! Duration: 30s
+2026-03-07 16:00:57,750 | WARNING | Bad posture alert triggered! Duration: 30s
+2026-03-07 16:00:57,847 | WARNING | Bad posture alert triggered! Duration: 30s
+2026-03-07 16:00:57,932 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,028 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,119 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,294 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,418 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,558 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,696 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,806 | WARNING | Bad posture alert triggered! Duration: 31s
+2026-03-07 16:00:58,998 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,112 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,334 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,469 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,584 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,704 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:00:59,863 | WARNING | Bad posture alert triggered! Duration: 32s
+2026-03-07 16:01:00,011 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,128 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,229 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,342 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,440 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,597 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,705 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,819 | WARNING | Bad posture alert triggered! Duration: 33s
+2026-03-07 16:01:00,994 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,222 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,312 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,399 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,500 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,631 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,754 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:01,835 | WARNING | Bad posture alert triggered! Duration: 34s
+2026-03-07 16:01:02,044 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,182 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,268 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,382 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,536 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,695 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,887 | WARNING | Bad posture alert triggered! Duration: 35s
+2026-03-07 16:01:02,984 | WARNING | Bad posture alert triggered! Duration: 36s
+2026-03-07 16:01:03,127 | WARNING | Bad posture alert triggered! Duration: 36s
+2026-03-07 16:01:03,247 | WARNING | Bad posture alert triggered! Duration: 36s
+2026-03-07 16:01:03,643 | INFO | System Shutdown Complete.
+2026-03-07 16:09:06,641 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:09:06,653 | INFO | Using existing user: DefaultUser (ID: 1)
+2026-03-07 16:10:39,612 | INFO | Loaded existing burnout model from disk.
+2026-03-07 16:10:39,628 | INFO | System Initializing...
+2026-03-07 16:10:39,638 | INFO | Monitoring Started.
+2026-03-07 16:11:39,692 | WARNING | No user detected for 60 seconds.
+2026-03-07 16:11:39,740 | ERROR | System Error: CHECK constraint failed: alert_type IN (
+            'POSTURE_ALERT',
+            'SCREEN_TIME_ALERT',
+            'BREAK_REMINDER',
+            'BURNOUT_HIGH_RISK'
+        )
+2026-03-07 16:11:40,102 | INFO | System Shutdown Complete.
+2026-03-07 16:13:54,344 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:13:54,354 | INFO | Using existing user: DefaultUser (ID: 1)
+2026-03-07 16:15:19,202 | INFO | Loaded existing burnout model from disk.
+2026-03-07 16:15:19,207 | INFO | System Initializing...
+2026-03-07 16:15:19,212 | INFO | Monitoring Started.
+2026-03-07 16:17:11,441 | INFO | System Shutdown Complete.
+2026-03-07 16:43:13,578 | WARNING | plyer not available. Desktop notifications disabled.
+2026-03-07 16:43:13,642 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:44:46,289 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:46:33,694 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:49:44,672 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:51:15,193 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:53:53,433 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:54:18,056 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:56:34,439 | INFO | Starting DeskGuardian Application...
+2026-03-07 16:56:52,328 | INFO | New user registered: admin (ID: 1)
+2026-03-07 16:57:02,362 | INFO | User logged in: admin (ID: 1)
+2026-03-07 16:57:02,362 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 16:58:13,935 | INFO | Trained model with coefficients: [[ 1.11805844  0.96585938 -0.92501028]]
+2026-03-07 16:58:13,942 | INFO | Trained and saved new burnout model.
+2026-03-07 16:58:13,957 | INFO | Monitoring started.
+2026-03-07 17:01:47,950 | INFO | Monitoring stopped.
+2026-03-07 17:01:47,976 | INFO | Monitoring stopped.
+2026-03-07 17:01:54,435 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:01:54,435 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:03:07,125 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:03:07,148 | INFO | Monitoring started.
+2026-03-07 17:04:25,161 | INFO | Monitoring stopped.
+2026-03-07 17:04:25,183 | INFO | Monitoring stopped.
+2026-03-07 17:04:33,477 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:04:33,477 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:05:40,009 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:05:40,027 | INFO | Monitoring started.
+2026-03-07 17:07:30,074 | INFO | Monitoring stopped.
+2026-03-07 17:07:30,103 | INFO | Monitoring stopped.
+2026-03-07 17:07:36,907 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:07:36,907 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:08:46,268 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:08:46,283 | INFO | Monitoring started.
+2026-03-07 17:09:26,469 | INFO | Monitoring stopped.
+2026-03-07 17:09:26,510 | INFO | Monitoring stopped.
+2026-03-07 17:17:59,503 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:19:23,854 | INFO | New user registered: admin (ID: 1)
+2026-03-07 17:19:28,120 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:19:28,120 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:20:38,935 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:21:19,205 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:21:28,063 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:21:28,079 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:22:38,576 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:22:38,615 | INFO | Monitoring started.
+2026-03-07 17:23:03,123 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 17:23:03,290 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 17:23:03,388 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 17:23:03,458 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 17:23:03,531 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 17:23:03,601 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:03,680 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:03,756 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:03,825 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:03,899 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:03,988 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,059 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,137 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,213 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,301 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,372 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,448 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,545 | WARNING | Bad posture alert! Duration: 11s
+2026-03-07 17:23:04,630 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:04,700 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:04,771 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:04,868 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:04,943 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,029 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,105 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,181 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,258 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,343 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,418 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,501 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,568 | WARNING | Bad posture alert! Duration: 12s
+2026-03-07 17:23:05,654 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:05,750 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:05,833 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:05,883 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:05,964 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,037 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,120 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,198 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,272 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,366 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,437 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,534 | WARNING | Bad posture alert! Duration: 13s
+2026-03-07 17:23:06,600 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:06,673 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:06,753 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:06,828 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:06,903 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:06,981 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,086 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,155 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,232 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,315 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,384 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,467 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,545 | WARNING | Bad posture alert! Duration: 14s
+2026-03-07 17:23:07,620 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:07,703 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:07,787 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:07,859 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:07,933 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,021 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,089 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,171 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,243 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,314 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,418 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,509 | WARNING | Bad posture alert! Duration: 15s
+2026-03-07 17:23:08,589 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:08,677 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:08,761 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:08,825 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:08,910 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:08,984 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,062 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,135 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,217 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,296 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,373 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,447 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,531 | WARNING | Bad posture alert! Duration: 16s
+2026-03-07 17:23:09,613 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:09,678 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:09,762 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:09,841 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:09,920 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:09,998 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,079 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,152 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,236 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,319 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,400 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,475 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,546 | WARNING | Bad posture alert! Duration: 17s
+2026-03-07 17:23:10,626 | WARNING | Bad posture alert! Duration: 18s
+2026-03-07 17:23:10,941 | WARNING | Bad posture alert! Duration: 18s
+2026-03-07 17:23:38,636 | WARNING | Screen time alert! 1.0 minutes
+2026-03-07 17:26:08,521 | INFO | Monitoring stopped.
+2026-03-07 17:26:08,570 | INFO | Monitoring stopped.
+2026-03-07 17:26:20,129 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:26:20,129 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:27:30,379 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:27:30,393 | INFO | Monitoring started.
+2026-03-07 17:28:30,431 | WARNING | Screen time alert! 1.0 minutes
+2026-03-07 17:30:20,336 | INFO | Monitoring stopped.
+2026-03-07 17:30:20,360 | INFO | Monitoring stopped.
+2026-03-07 17:35:08,606 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:36:35,632 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:36:35,639 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:38:09,805 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:39:12,773 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:39:12,773 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:40:33,939 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:40:33,975 | INFO | Monitoring started.
+2026-03-07 17:41:33,996 | WARNING | Screen time alert! 1.0 minutes
+2026-03-07 17:42:40,362 | INFO | Monitoring stopped.
+2026-03-07 17:42:40,391 | INFO | Monitoring stopped.
+2026-03-07 17:47:02,313 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:50:00,399 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:53:17,248 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:57:10,129 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:57:51,138 | INFO | New user registered: admin (ID: 1)
+2026-03-07 17:58:06,801 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:58:06,882 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:58:36,909 | INFO | Starting DeskGuardian Application...
+2026-03-07 17:58:47,212 | INFO | User logged in: admin (ID: 1)
+2026-03-07 17:58:47,219 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 17:59:49,181 | INFO | Loaded existing burnout model from disk.
+2026-03-07 17:59:49,232 | INFO | Monitoring started.
+2026-03-07 18:00:35,726 | INFO | Loaded existing burnout model from disk.
+2026-03-07 18:00:35,759 | INFO | Monitoring started.
+2026-03-07 18:00:49,246 | WARNING | Screen time alert! 1.0 minutes
+2026-03-07 18:00:49,319 | INFO | Desktop notification shown: DeskGuardian - Screen Time Alert
+2026-03-07 18:00:49,378 | INFO | Desktop notification shown: DeskGuardian - Burnout Risk Alert
+2026-03-07 18:00:54,300 | INFO | Monitoring stopped.
+2026-03-07 18:00:54,376 | INFO | Monitoring stopped.
+2026-03-07 18:01:02,684 | INFO | User logged in: admin (ID: 1)
+2026-03-07 18:01:02,684 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 18:01:49,451 | INFO | Desktop notification shown: DeskGuardian - Burnout Risk Alert
+2026-03-07 18:02:38,016 | INFO | Loaded existing burnout model from disk.
+2026-03-07 18:02:38,036 | INFO | Monitoring started.
+2026-03-07 18:02:49,520 | INFO | Desktop notification shown: DeskGuardian - Burnout Risk Alert
+2026-03-07 18:03:03,335 | INFO | Monitoring stopped.
+2026-03-07 18:03:36,491 | INFO | Monitoring stopped.
+2026-03-07 18:03:36,533 | INFO | Monitoring stopped.
+2026-03-07 18:03:59,574 | INFO | User logged in: admin (ID: 1)
+2026-03-07 18:03:59,574 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 18:05:28,357 | INFO | Loaded existing burnout model from disk.
+2026-03-07 18:05:28,392 | INFO | Monitoring started.
+2026-03-07 18:05:51,500 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 18:05:51,553 | INFO | Desktop notification shown: DeskGuardian - Bad Posture Alert
+2026-03-07 18:05:51,645 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 18:05:51,745 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 18:05:51,909 | WARNING | Bad posture alert! Duration: 10s
+2026-03-07 18:06:28,427 | INFO | Desktop notification shown: DeskGuardian - Burnout Risk Alert
+2026-03-07 18:06:28,475 | WARNING | Screen time alert! 1.0 minutes
+2026-03-07 18:06:28,509 | INFO | Desktop notification shown: DeskGuardian - Screen Time Alert
+2026-03-07 18:07:03,698 | INFO | Desktop notification shown: DeskGuardian - No User Detected
+2026-03-07 18:07:10,050 | INFO | Monitoring stopped.
+2026-03-07 18:07:10,075 | INFO | Monitoring stopped.
+2026-03-07 18:08:02,252 | INFO | Starting DeskGuardian Application...
+2026-03-07 18:08:12,853 | INFO | User logged in: admin (ID: 1)
+2026-03-07 18:08:12,853 | INFO | Login successful — user_id=1, name=admin
+2026-03-07 18:09:36,182 | INFO | Loaded existing burnout model from disk.
+2026-03-07 18:09:36,218 | INFO | Monitoring started.
+2026-03-07 18:10:19,806 | INFO | Monitoring stopped.
+2026-03-07 18:10:19,856 | INFO | Monitoring stopped.
+2026-03-07 18:14:30,494 | INFO | Starting DeskGuardian Application...
+2026-03-07 18:15:14,427 | INFO | Starting DeskGuardian Application...
+2026-03-07 18:15:50,493 | INFO | New user registered: admin (ID: 1)
+2026-03-07 18:16:17,020 | INFO | New user registered: demo (ID: 2)
+2026-03-07 18:16:41,320 | INFO | User logged in: demo (ID: 2)
+2026-03-07 18:16:41,320 | INFO | Login successful — user_id=2, name=demo

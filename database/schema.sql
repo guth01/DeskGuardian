@@ -11,7 +11,8 @@ PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS User (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL,
     age INTEGER NOT NULL CHECK(age > 0),
     occupation TEXT,
     preferences_json TEXT
@@ -73,7 +74,7 @@ CREATE TABLE IF NOT EXISTS BreakEvent (
     session_id INTEGER NOT NULL,
     start_time DATETIME NOT NULL,
     end_time DATETIME NOT NULL,
-    duration_minutes INTEGER NOT NULL CHECK(duration_minutes > 0),
+    duration_minutes REAL NOT NULL CHECK(duration_minutes > 0),
     break_type TEXT DEFAULT 'Short Break',
 
     FOREIGN KEY(session_id)
@@ -125,7 +126,9 @@ CREATE TABLE IF NOT EXISTS Alert (
             'POSTURE_ALERT',
             'SCREEN_TIME_ALERT',
             'BREAK_REMINDER',
-            'BURNOUT_HIGH_RISK'
+            'BURNOUT_HIGH_RISK',
+            'NO_USER_DETECTED',
+            'USER_DETECTED'
         )
     ),
     message TEXT NOT NULL,

@@ -62,16 +62,22 @@ class PostureMetrics:
     # ======================================
 
     @staticmethod
-    def compute_neck_angle(shoulder, ear, nose):
+    def compute_neck_angle(shoulder, ear, nose=None):
         """
-        Calculate how far the head is displaced from vertical using the ear–nose
-        vector.  A straight neck places the nose directly above the ear (small
-        angle); a forward head increases the deviation.
+        Compute neck deviation by measuring the shoulder→ear vector against
+        the vertical axis.  When the user is sitting upright the ear is
+        directly above the shoulder, giving an angle close to 0°.  Head tilt
+        or drop increases the deviation.
 
-        The shoulder argument is kept for API compatibility but is unused.
+        The previous implementation measured the ear→nose vector against
+        vertical, which is almost purely horizontal from a front-facing
+        camera (~90-110°) regardless of actual posture.  The shoulder→ear
+        vector works correctly from any camera angle.
+
+        The nose argument is kept for API compatibility but is unused.
         """
-        # vector from ear toward nose
-        v = np.array(nose) - np.array(ear)
+        # vector from shoulder up toward ear
+        v = np.array(ear) - np.array(shoulder)
         vertical = np.array([0.0, -1.0])  # upward in image coords
         cosine = np.dot(v, vertical) / (
             (np.linalg.norm(v) * np.linalg.norm(vertical)) + 1e-6

@@ -50,7 +50,7 @@ POSTURE_CLASSES = [
 ]
 
 # Alert trigger threshold: Send alert after continuous bad/very bad posture
-POSTURE_ALERT_THRESHOLD_SECONDS = 30  # 30 seconds of continuous bad posture
+POSTURE_ALERT_THRESHOLD_SECONDS = 10  # seconds of continuous bad posture (testing)
 
 
 # ===============================
@@ -58,13 +58,13 @@ POSTURE_ALERT_THRESHOLD_SECONDS = 30  # 30 seconds of continuous bad posture
 # ===============================
 
 # Continuous screen usage alert threshold
-CONTINUOUS_SCREEN_TIME_LIMIT_MINUTES = 45
+CONTINUOUS_SCREEN_TIME_LIMIT_MINUTES = 1  # 1 minute for testing
 
-# Break detection threshold (SRS FR-3: 2 minutes)
-BREAK_THRESHOLD_SECONDS = 120
+# Break detection threshold
+BREAK_THRESHOLD_SECONDS = 10  # 10 seconds for testing
 
-# No user detected timeout: Alert after user not detected for 60 seconds
-IDLE_FACE_NOT_DETECTED_SECONDS = 60
+# No user detected timeout
+IDLE_FACE_NOT_DETECTED_SECONDS = 15  # 15 seconds for testing
 
 
 # ===============================
@@ -78,7 +78,7 @@ LOW_RISK_THRESHOLD = 0.4
 HIGH_RISK_THRESHOLD = 0.7
 
 # Burnout evaluation interval (in minutes)
-BURNOUT_EVALUATION_INTERVAL_MINUTES = 30
+BURNOUT_EVALUATION_INTERVAL_MINUTES = 1  # 1 minute for testing
 
 # Domain constraint (SRS)
 BURNOUT_PROBABILITY_MIN = 0.0

@@ -4,6 +4,7 @@ from config.constants import BREAK_THRESHOLD_SECONDS
 from database.db_manager import DBManager
 from modules.behavior_tracking.break_detector import BreakDetector
 from modules.behavior_tracking.screen_time_tracker import ScreenTimeTracker
+from utils.enums import PostureClass
 
 
 class SessionManager:
@@ -41,15 +42,21 @@ class SessionManager:
         self.screen_tracker.start_session()
 
     def end_session(self):
-        """Mark the session row as finished."""
+        """Mark the session row as finished and persist accumulated metrics."""
         if self.session_id:
+            self.db.update_session_metrics(
+                self.session_id,
+                total_screen_time_minutes=int(self.screen_tracker.get_total_screen_time_minutes()),
+                bad_posture_count=self.screen_tracker.get_bad_posture_count(),
+            )
             self.db.end_session(self.session_id)
 
     # ======================================
     # MAIN UPDATE (called each loop)
     # ======================================
 
-    def update(self, posture_class, alert_triggered, face_detected):
+    def update(self, posture_class, alert_triggered, face_detected,
+               back_angle=None, neck_angle=None):
         """Process a single monitoring iteration.
 
         Returns any break event dictionary produced by the internal
@@ -60,18 +67,16 @@ class SessionManager:
         self.screen_tracker.update_screen_time()
 
         # increment bad posture count for classes that are not good
-        if posture_class and posture_class != "Good":
+        if posture_class is not None and posture_class != PostureClass.GOOD:
             self.screen_tracker.increment_bad_posture()
 
-        # log every posture classification to the database so the dashboard has
-        # full history. ``back_angle`` etc. are intentionally left ``None``; the
-        # posture detector could be extended later to supply them.
+        # log every posture classification to the database with actual angles
         if posture_class is not None and self.session_id is not None:
             self.db.log_posture_event(
                 self.session_id,
                 posture_class,
-                back_angle=None,
-                neck_angle=None,
+                back_angle=back_angle,
+                neck_angle=neck_angle,
                 shoulder_alignment=None,
                 is_alert_triggered=alert_triggered,
             )
